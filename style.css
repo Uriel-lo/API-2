@@ -1,0 +1,109 @@
+body{
+    
+    margin:0;
+    padding:0;
+    font-family: 'Cinzel', serif;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.quiz-wrapper{
+    height: 400px;
+    width: 600px;
+    background-color: white;
+    margin: 30px auto;
+    border-radius: 8px;
+    padding:25px;
+    box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.2),
+                0px 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: all 0.3s ease;            
+}
+
+
+.quiz-wrapper .question{
+    min-height: 50px;
+    background-color: #BA135D;
+    border-radius: 10px;
+    color: white;
+    padding: 15px;
+    float: left;
+    width: 100%;
+    font-size: 25px;
+}
+
+.quiz-wrapper .options{
+    float: left;
+    width: 100%;
+}
+
+.quiz-wrapper .options ul{
+    list-style: none;
+    padding: 0%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.quiz-wrapper .options ul li{
+    display: inline-block;
+    background-color: #1768AC;
+    width: 46%;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    margin: 10px;
+    color:white;
+    box-shadow: 0px 3px 0px rgb(69, 71, 82);
+    cursor: pointer;
+}
+
+.quiz-wrapper .options ul li.correct{
+    background-color: rgb(4, 163, 4);
+    box-shadow: 0px 3px 0px grey;
+}
+
+.quiz-wrapper .options ul li.wrong{
+    background-color: rgb(251, 7, 7);
+    box-shadow: 0px 3px 0px rgb(100, 99, 99);
+}
+
+.quiz-wrapper .options ul li:active{
+    box-shadow: 0px 0px 0px  rgb(65, 66, 70);
+}
+
+
+
+.quiz-wrapper .score {
+    float: left;
+    width: 100%;
+}
+
+.quiz-wrapper .score .next{
+    width: 40%;
+    float: left;
+}
+
+.quiz-wrapper .score .next button{
+    padding: 10px 70px;
+    color: white;
+    background-color:#FF7600;
+    border: none;
+    border-radius: 10px;
+}
+
+.quiz-wrapper .score .score-card{
+    width: 60%;
+    float: left;
+    line-height: 40px;
+    font-size: 20px;
+}
+
+.quiz-wrapper .score .score-card span{
+    background-color: rgb(18, 139, 45);
+    padding: 5px 20px;
+    border: none;
+    color:white;
+    border-radius: 8px;
+}
